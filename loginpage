@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightpink;
+  }
+
+  .container {
+    height: 200px;
+    width: 700px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  button {
+    background-color: #007bff;
+    color: #fff;
+border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+<form action='http://13.233.92.162/home.html'>
+<div class="container">
+  <h1>LOGIN PAGE</h1>
+  <form>
+    <pre>
+      Enter your MAIL ID <input type='text' name='n'><br/>
+      Enter your password<input type='password' name='p'><br/>
+      <button>LOGIN</button>
+    </pre>
+    <br/>
+    <b>THANK YOU</b>
+  </form>
+</div>
+</form>
+</body>
+</html>
