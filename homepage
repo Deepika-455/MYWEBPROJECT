@@ -1,0 +1,141 @@
+<html>
+<head>
+<body>
+
+<title>our home page</title>
+<style>
+
+body{
+ font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: radial-gradient(circle,       #db7093,        #9370db);
+      background-size: cover;
+}
+nav{
+background: #c7a0cc;
+width:100;
+overflow:auto;
+}
+ul{
+margin:0;
+
+padding:0;
+list-style:none;
+}
+li{
+float:left;
+}
+.container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh; /
+}
+
+.container div {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+width: 350px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+    margin: 10px;
+}
+
+
+
+  .container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+</style>
+</head>
+<body>
+
+<div class ="container">
+<form action='http://13.233.92.162/AWS.html'>
+<div class ="AWS">
+<button>AWS</button>
+<br/>
+<div class ="AWS">
+<button>AWS</button>
+<br/>
+<br/>
+</div>
+</form>
+
+<script> 
+function sms(){
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET","http://13.233.92.162/cgi-bin/sms.py ", true);
+        xhr.send();
+        xhr.onreadystatechange = function(){
+        if (xhr.readyState == 4 ){
+                document.getElementById("b").innerHTML = this.responseText;
+        }
+}
+
+}
+</script>
+
+<div class ="PYTHON">
+<button onclick="sms()"> sms </button>
+<p id="b"> sms coming</p>
+</div>
+
+<form action='http://13.233.92.162/cgi-bin/docker.py'>
+<div class ="DOCKER">
+<input name="n" />
+<button>DOCKER</button>
+</div>
+</form>
+
+<form action='http://13.233.92.162/mail.html'>
+<div class ="mail">
+<button>MAIL</button>
+</div>
+</form>
+
+<form action='https://www.youtube.com'>
+<div class ="YOUTUBE">
+<button>YOUTUBE</button>
+</div>
+</form>
+
+<form action='https://web.whatsapp.com/'>
+<div class ="WHATSAPP">
+<button>whatsapp</button>
+</div>
+</form>
+
+</br>
+
+<div>
+<form action="http://13.233.92.162/cgi-bin/linux.py">
+
+<h1>Run your linux commands</h1>
+        <label for="query">Enter your command </label>
+        <input type="text" name="cmd"><br/><br/>
+       <input type="submit" value="Run">
+    </form>
+        </div>
+</body>
+</html>
