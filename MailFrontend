@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail Form</title>
+    <style>
+        /* Reset default styles for all elements */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body styles */
+        body {
+            background: linear-gradient(to bottom, #f9d0d0, #ffc0cb); /* Gradient background */
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+}
+
+        /* Form styles */
+        form {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* Input styles */
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Button styles */
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 30px;
+cursor: pointer;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <form action='http://13.233.92.162/cgi-bin/mmail.py?g=g1&m1=m'>
+        <label for="g1">Enter the ID</label>
+        <input type='text' id='g1' name='g1'><br/>
+        <label for="m">Enter your message</label>
+        <input type='text' id='m' name='m'><br/>
+        <button>SEND</button>
+    </form>
+</body>
+</html>
